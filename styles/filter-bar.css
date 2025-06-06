@@ -1,0 +1,8 @@
+.filter-bar {
+    background-color: lightgreen;
+    position: fixed;
+    top: 56px;
+    left: 230px;
+    right: 0;
+    height: 56px;
+}
