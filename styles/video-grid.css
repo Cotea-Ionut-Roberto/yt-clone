@@ -20,7 +20,6 @@ main {
 
 .thumbnail-image-container {
     width: 100%;
-    height: 100%;
     margin-bottom: 8px;
 }
 
@@ -38,8 +37,9 @@ main {
 
 .thumbnail-image {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    object-position: center;
     border-radius: 12px;
 }
 
