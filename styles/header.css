@@ -69,6 +69,13 @@
     padding-left: 14px;
     background-color: rgb(15, 15, 15);
     font-family: Roboto, Arial;
+    color: white;
+
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .search-button {
@@ -94,9 +101,6 @@
     padding: 8px 8px;
     margin-left: 12px;
 }
-
-
-
 
 .right-section-header {
     width: 220px;

@@ -1,9 +1,40 @@
 .sidebar {
-    background-color: lightcoral;
+    background-color: rgb(15, 15, 15);
     position: fixed;
     top: 56px;
     bottom: 0;
     left: 0;
     width: 230px;
     z-index: 2000;
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-inline: 12px;
+}
+
+.sidebar-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    gap: 24px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.sidebar-item-svg {
+    height: 24px;
+    width: 24px;
+}
+
+.sidebar-divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    margin-top: 12px;
 }
