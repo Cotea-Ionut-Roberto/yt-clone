@@ -50,6 +50,54 @@
 }
 
 .right-section-header {
-    background-color: lightseagreen;
-    width: 225px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border: none;
+    border-radius: 20px;
+    padding-right: 18px;
+    padding-block: 2px;
+    font-weight: 500;
+}
+
+.add-icon {
+    height: 32px;
+    padding-right: 4px;
+}
+
+.notifications-container {
+    position: relative;
+}
+
+.notifications-icon {
+    height: 28px;
+}
+
+.notifications-count {
+    position: absolute;
+    top: 1px;
+    right: -4px;
+    background-color: rgb(225, 0, 45);
+    color: white;
+    font-size: 12px;
+    padding: 1px 5px;
+    border-radius: 10px;
+}
+
+.user-profile {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-left: 14px;
 }
