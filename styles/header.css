@@ -11,8 +11,36 @@
 }
 
 .left-section-header {
-    background-color: lightseagreen;
     width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 12px;
+}
+
+.menu-3line {
+    height: 28px;
+}
+
+.yt-logo-container {
+    height: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 3px;
+}
+
+.premium-logo path {
+    fill: white;
+}
+
+.ro-up {
+    font-size: 10px;
+    position: absolute;
+    top: -6px;
+    right: -17px;
+    color: rgb(170, 170, 170);
 }
 
 .middle-section-header {
