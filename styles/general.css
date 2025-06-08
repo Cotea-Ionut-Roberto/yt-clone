@@ -8,3 +8,14 @@ p {
     margin: 0;
     color: white;
 }
+
+.top-blur-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(56px + 56px);
+    background-color: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(28px);
+    z-index: 1500;
+}

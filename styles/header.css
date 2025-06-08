@@ -7,22 +7,21 @@
     display: flex;
     height: 56px;
     z-index: 2000;
-}
-
-.left-section-header,
-.middle-section-header,
-.right-section-header {
-    flex: 1;
+    justify-content: space-between;
 }
 
 .left-section-header {
     background-color: lightseagreen;
+    width: 170px;
 }
 
 .middle-section-header {
     background-color: lightsalmon;
+    flex: 1;
+    max-width: 735px;
 }
 
 .right-section-header {
     background-color: lightseagreen;
+    width: 225px;
 }
