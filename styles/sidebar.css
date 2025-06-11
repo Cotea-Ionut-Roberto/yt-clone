@@ -6,6 +6,7 @@
     left: 0;
     width: 230px;
     z-index: 2000;
+    overflow-y: auto;
 }
 
 .sidebar-section {
@@ -13,6 +14,18 @@
     flex-direction: column;
     padding-top: 12px;
     padding-inline: 12px;
+}
+
+.sidebar-top-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    padding-left: 12px;
+    font-size: 14px;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 5px;
 }
 
 .sidebar-item {
@@ -23,7 +36,6 @@
     gap: 24px;
     padding-left: 12px;
     font-size: 14px;
-    font-weight: 500;
     color: white;
 }
 
@@ -37,4 +49,16 @@
     width: 100%;
     background-color: rgb(39, 39, 39);
     margin-top: 12px;
+}
+
+.sidebar-subtitle {
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.sidebar-subscriptions {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
 }
