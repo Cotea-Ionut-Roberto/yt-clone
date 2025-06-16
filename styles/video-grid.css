@@ -21,6 +21,7 @@ main {
 .thumbnail-image-container {
     width: 100%;
     margin-bottom: 8px;
+    cursor: pointer;
 }
 
 .video-timestamp {
@@ -53,6 +54,7 @@ main {
     width: 40px;
     height: 40px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .video-info {
@@ -68,15 +70,18 @@ main {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 6px;
+    cursor: pointer;
 }
 
 .video-author {
     font-size: 14px;
     color: rgb(170, 170, 170);
     margin-bottom: 2px;
+    cursor: pointer;
 }
 
 .video-stats {
     font-size: 14px;
     color: rgb(170, 170, 170);
+    cursor: pointer;
 }

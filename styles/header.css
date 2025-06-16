@@ -20,6 +20,7 @@
 
 .menu-3line {
     height: 28px;
+    cursor: pointer;
 }
 
 .yt-logo-container {
@@ -29,6 +30,7 @@
     justify-content: center;
     position: relative;
     padding-left: 3px;
+    cursor: pointer;
 }
 
 .premium-logo path {
@@ -85,6 +87,7 @@
     border-bottom-right-radius: 20px;
     padding-inline: 16px;
     margin-left: -1px;
+    cursor: pointer;
 }
 
 .search-icon {
@@ -100,6 +103,7 @@
     justify-content: center;
     padding: 8px 8px;
     margin-left: 12px;
+    cursor: pointer;
 }
 
 .right-section-header {
@@ -121,6 +125,7 @@
     padding-right: 18px;
     padding-block: 2px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .add-icon {
@@ -130,6 +135,7 @@
 
 .notifications-container {
     position: relative;
+    cursor: pointer;
 }
 
 .notifications-icon {
@@ -153,4 +159,5 @@
     border-radius: 16px;
     margin-right: 10px;
     margin-left: 14px;
+    cursor: pointer;
 }
