@@ -15,12 +15,25 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-left: 12px;
+    padding-left: 9.5px;
+}
+
+.menu-3line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.menu-3line-container:hover {
+    background-color: rgb(39, 39, 39);
 }
 
 .menu-3line {
-    height: 28px;
-    cursor: pointer;
+    height: 24px;
+    width: 24px;
 }
 
 .yt-logo-container {
@@ -68,7 +81,7 @@
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     font-size: 16px;
-    padding-left: 14px;
+    padding-left: 16px;
     background-color: rgb(15, 15, 15);
     font-family: Roboto, Arial;
     color: white;
@@ -85,13 +98,17 @@
     border: 1px solid rgb(48, 48, 48);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding-inline: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-left: -1px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .search-icon {
-    height: 28px;
+    height: 24px;
+    width: 24px;
 }
 
 .voice-search-button {
@@ -104,6 +121,10 @@
     padding: 8px 8px;
     margin-left: 12px;
     cursor: pointer;
+}
+
+.voice-search-button:hover {
+    background-color: rgb(48, 48, 48);
 }
 
 .right-section-header {
@@ -122,35 +143,59 @@
     background-color: rgb(39, 39, 39);
     border: none;
     border-radius: 20px;
-    padding-right: 18px;
-    padding-block: 2px;
     font-weight: 500;
     cursor: pointer;
+    padding-left: 10px;
+    padding-right: 16px;
+    padding-block: 0;
+    column-gap: 2px;
+}
+
+.add-button:hover {
+    background-color: rgb(64, 64, 64);
+}
+
+.add-button span {
+    font-size: 14px;
+    line-height: 36px;
 }
 
 .add-icon {
-    height: 32px;
+    height: 24px;
+    width: 24px;
     padding-right: 4px;
 }
 
 .notifications-container {
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.notifications-container:hover {
+    background-color: rgb(39, 39, 39);
 }
 
 .notifications-icon {
-    height: 28px;
+    height: 24px;
+    width: 24px;
 }
 
 .notifications-count {
     position: absolute;
-    top: 1px;
-    right: -4px;
+    top: 5px;
+    right: 3px;
     background-color: rgb(225, 0, 45);
     color: white;
     font-size: 12px;
-    padding: 1px 5px;
+    padding-inline: 5px;
+    padding-block: 1px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .user-profile {

@@ -4,7 +4,7 @@
     top: 56px;
     bottom: 0;
     left: 0;
-    width: 230px;
+    width: 236px;
     z-index: 2000;
     overflow-y: auto;
     overflow-x: hidden;
@@ -57,6 +57,24 @@
     color: white;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.sidebar-item--active {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    gap: 24px;
+    padding-left: 12px;
+    font-size: 14px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(39, 39, 39);
+}
+
+.sidebar-item--active:hover {
+    background-color: rgb(64, 64, 64);
 }
 
 .sidebar-item:hover {
