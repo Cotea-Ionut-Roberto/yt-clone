@@ -10,7 +10,9 @@
     align-items: center;
     padding-left: 28px;
     padding-right: 54px;
-
+    overflow: hidden;
+    white-space: nowrap;
+    column-gap: 12px;
 }
 
 .filter-button {
@@ -36,4 +38,17 @@
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
+}
+
+@media (max-width: 1312px) {
+    .filter-bar {
+        left: calc(72px + 16px - 18px);
+    }
+}
+
+@media (max-width: 790px) {
+    .filter-bar {
+        left: 16px;
+        padding-left: 8px;
+    }
 }

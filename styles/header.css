@@ -24,6 +24,7 @@
     align-items: center;
     cursor: pointer;
     padding: 8px;
+    margin-left: 7px;
     border-radius: 20px;
 }
 
@@ -44,6 +45,8 @@
     position: relative;
     padding-left: 3px;
     cursor: pointer;
+    min-width: 101px;
+    padding: 18px 14px 18px 16px;
 }
 
 .premium-logo path {
@@ -53,8 +56,8 @@
 .ro-up {
     font-size: 10px;
     position: absolute;
-    top: -6px;
-    right: -17px;
+    top: 12px;
+    right: -3px;
     color: rgb(170, 170, 170);
 }
 
@@ -85,6 +88,7 @@
     background-color: rgb(15, 15, 15);
     font-family: Roboto, Arial;
     color: white;
+    width: 0;
 
 }
 
@@ -205,4 +209,45 @@
     margin-right: 10px;
     margin-left: 14px;
     cursor: pointer;
+}
+
+@media (max-width: 654px) {
+
+    .search-input {
+        display: none;
+    }
+
+    .search-bar-container {
+        margin: 0;
+        justify-content: end;
+    }
+
+    .voice-search-button {
+        margin: 0;
+        background-color: rgb(15, 15, 15);
+        flex: 0;
+    }
+
+    .middle-section-header {
+        justify-content: end;
+    }
+
+    .search-button {
+        flex: 0;
+        border: none;
+        border-radius: 20px;
+        background-color: rgb(15, 15, 15);
+        display: flex;
+        vertical-align: center;
+        justify-content: space-around;
+        padding: 8px 8px;
+        margin-left: 0;
+        cursor: pointer;
+    }
+
+    .search-button:hover,
+    .voice-search-button:hover {
+        background-color: rgb(39, 39, 39);
+    }
+
 }
