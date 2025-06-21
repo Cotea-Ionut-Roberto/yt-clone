@@ -1,4 +1,4 @@
-const videos = [
+/*const videos = [
     {
         thumbnail: 'assets/images/thumbnails/thumbnail1.avif',
         preview: 'assets/video-previews/compressed-preview.mp4',
@@ -117,7 +117,8 @@ const videos = [
             profilePic: "assets/images/channel-profile-pictures/channel9.jpg"
         }
     }
-];
+];*/
+
 
 let videoCardsHTML = '';
 
@@ -165,8 +166,9 @@ function timeAgo(dateString, wasLive = false) {
 
 }
 
-videos.forEach((video) => {
-    videoCardsHTML += `
+fetch('data/videos.json').then(response => response.json()).then(videos => {
+    videos.forEach((video) => {
+        videoCardsHTML += `
     <div class="video-card">
                 <div class="thumbnail-container">
                     <div class="thumbnail-image-container">
@@ -189,14 +191,28 @@ videos.forEach((video) => {
                 </div>
             </div>
     `;
-});
+    });
 
-document.querySelector('.js-video-grid').innerHTML = videoCardsHTML;
+    document.querySelector('.js-video-grid').innerHTML = videoCardsHTML;
 
-document.querySelectorAll(".video-preview").forEach(video => {
-    video.addEventListener("mouseenter", () => video.play());
-    video.addEventListener("mouseleave", () => {
-        video.pause();
-        video.currentTime = 0;
+    document.querySelectorAll(".video-card").forEach(card => {
+        const video = card.querySelector(".video-preview");
+        const timestamp = card.querySelector(".video-timestamp");
+
+        card.addEventListener("mouseenter", () => {
+            video.play();
+            if (timestamp) timestamp.style.opacity = "0";
+        });
+
+        card.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0;
+            video.load();
+            if (timestamp) timestamp.style.opacity = "1";
+        });
     });
 });
+
+
+
+
