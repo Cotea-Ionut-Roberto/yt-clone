@@ -166,22 +166,30 @@ function timeAgo(dateString, wasLive = false) {
 
 }
 
-fetch('data/videos.json').then(response => response.json()).then(videos => {
-    videos.forEach((video) => {
-        videoCardsHTML += `
+async function loadVideos() {
+    try {
+        const response = await fetch('data/videos.json');
+        if (!response.ok) throw new Error(`${response.status}`);
+
+        const videos = await response.json();
+        videos.forEach((video) => {
+            videoCardsHTML += `
     <div class="video-card">
+                <a href="video.html">
                 <div class="thumbnail-container">
                     <div class="thumbnail-image-container">
                         <video class="video-preview" muted loop preload="metadata" poster="${video.thumbnail}" src="${video.preview}"></video>
                     </div>
                     <div class="video-timestamp">${video.duration}</div>
-                </div>
+                </div></a>
                 <div class="video-details">
                     <div class="profile-picture-container">
                         <img class="profile-picture" src="${video.author.profilePic}">
                     </div>
                     <div class="video-info">
+                        <a href="video.html">
                         <p class="video-title">${video.title}</p>
+                        </a>
                         <p class="video-author">${video.author.name}</p>
                         <p class="video-stats">${formatViews(video.views)} de vizionări &#183; ${timeAgo(video.publishedDate, video.wasLive)} </p>
                     </div>
@@ -191,27 +199,32 @@ fetch('data/videos.json').then(response => response.json()).then(videos => {
                 </div>
             </div>
     `;
-    });
-
-    document.querySelector('.js-video-grid').innerHTML = videoCardsHTML;
-
-    document.querySelectorAll(".video-card").forEach(card => {
-        const video = card.querySelector(".video-preview");
-        const timestamp = card.querySelector(".video-timestamp");
-
-        card.addEventListener("mouseenter", () => {
-            video.play();
-            if (timestamp) timestamp.style.opacity = "0";
         });
 
-        card.addEventListener("mouseleave", () => {
-            video.pause();
-            video.currentTime = 0;
-            video.load();
-            if (timestamp) timestamp.style.opacity = "1";
+        document.querySelector('.js-video-grid').innerHTML = videoCardsHTML;
+
+        document.querySelectorAll(".video-card").forEach(card => {
+            const video = card.querySelector(".video-preview");
+            const timestamp = card.querySelector(".video-timestamp");
+
+            card.addEventListener("mouseenter", () => {
+                video.play();
+                if (timestamp) timestamp.style.opacity = "0";
+            });
+
+            card.addEventListener("mouseleave", () => {
+                video.pause();
+                video.currentTime = 0;
+                video.load();
+                if (timestamp) timestamp.style.opacity = "1";
+            });
         });
-    });
-});
+    } catch (error) {
+        console.error('Error loading json data', error);
+    }
+}
+
+loadVideos()
 
 
 

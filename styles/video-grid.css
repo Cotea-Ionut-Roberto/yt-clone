@@ -87,6 +87,18 @@ main {
     cursor: pointer;
 }
 
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
 @media (max-width: 1312px) {
     main {
         padding-left: calc(72px + 16px);
