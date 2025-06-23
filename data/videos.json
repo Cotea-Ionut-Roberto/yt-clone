@@ -1,20 +1,39 @@
 [
     {
+        "id": 0,
+        "thumbnail": "assets/images/thumbnails/cbumeat.avif",
+        "preview": "assets/video-previews/compressed.mp4",
+        "fullVideo": "assets/videos/FULL DAY OF CHEATING WHAT I WANTED TO EAT DURING PREP.mp4",
+        "title": "FULL DAY OF CHEATING | WHAT I WANTED TO EAT DURING PREP",
+        "duration": "16:18",
+        "views": 6282653,
+        "publishedDate": "2021-10-22",
+        "wasLive": false,
+        "author": {
+            "name": " Chris Bumstead",
+            "profilePic": "assets/images/channel-profile-pictures/channel7.jpg"
+        }
+    },
+    {
+        "id": 1,
         "thumbnail": "assets/images/thumbnails/thumbnail1.avif",
         "preview": "assets/video-previews/compressed-preview.mp4",
-        "title": "Lofi Hip Hop Beats 📮 1980s & 90s Retro Vibes & Nostalgic Japanese Town Ambience 🌆 Lofi Rain Playlist",
-        "duration": "11:13:25",
-        "views": 47161,
-        "publishedDate": "2025-05-29",
-        "wasLive": true,
+        "fullVideo": "assets/videos/BMW R1250GS Adventure — Why I bought one and my TOP MODS for it.mp4",
+        "title": "BMW R1250GS Adventure — Why I bought one and my TOP MODS for it",
+        "duration": "16:00",
+        "views": 1285411,
+        "publishedDate": "2022-09-28",
+        "wasLive": false,
         "author": {
-            "name": "The Japanese Town",
+            "name": "Lone Rider",
             "profilePic": "assets/images/channel-profile-pictures/channel1.jpg"
         }
     },
     {
+        "id": 2,
         "thumbnail": "assets/images/thumbnails/thumbnail2.jpg",
         "preview": "assets/video-previews/compressed-preview1.mp4",
+        "fullVideo": "assets/videos/2024 Lamborghini Revuelto Review - The Fastest Lamborghini Ever Made.mp4",
         "title": "2024 Lamborghini Revuelto Review - The Fastest Lamborghini Ever Made",
         "duration": "21:42",
         "views": 182000,
@@ -26,8 +45,10 @@
         }
     },
     {
+        "id": 3,
         "thumbnail": "assets/images/thumbnails/thumbnail3.avif",
         "preview": "assets/video-previews/compressed-preview2.mp4",
+        "fullVideo": "assets/videos/Healing Place - Spiritual Tibetan Ambient Music - Meditative Relaxing Ambience.mp4",
         "title": "Healing Place - Spiritual Tibetan Ambient Music - Meditative Relaxing Ambience",
         "duration": "1:00:01",
         "views": 7700,
@@ -39,8 +60,10 @@
         }
     },
     {
+        "id": 4,
         "thumbnail": "assets/images/thumbnails/thumbnail4.jpg",
         "preview": "assets/video-previews/compressed-preview3.mp4",
+        "fullVideo": "assets/videos/quitting your youtube addiction is easy, actually.mp4",
         "title": "quitting your youtube addiction is easy, actually",
         "duration": "5:10",
         "views": 1200000,
@@ -52,8 +75,10 @@
         }
     },
     {
+        "id": 5,
         "thumbnail": "assets/images/thumbnails/thumbnail5.avif",
         "preview": "assets/video-previews/compressed-preview4.mp4",
+        "fullVideo": "assets/videos/Maximize Productivity, Physical & Mental Health With Daily Tools ｜ Huberman Lab Essentials.mp4",
         "title": "Maximize Productivity, Physical & Mental Health With Daily Tools | Huberman Lab Essentials",
         "duration": "31:53",
         "views": 221000,
@@ -65,8 +90,10 @@
         }
     },
     {
+        "id": 6,
         "thumbnail": "assets/images/thumbnails/thumbnail6.avif",
         "preview": "assets/video-previews/compressed-preview5.mp4",
+        "fullVideo": "assets/videos/Lexus LFA Review A Living Legend.mp4",
         "title": "Lexus LFA Review // A Living Legend",
         "duration": "20:18",
         "views": 3400000,
@@ -78,34 +105,25 @@
         }
     },
     {
+        "id": 7,
         "thumbnail": "assets/images/thumbnails/thumbnail7.avif",
         "preview": "assets/video-previews/compressed-preview6.mp4",
+        "fullVideo": "assets/videos/FULL CHEST WORKOUT W. COACH HANY RAMBOD.mp4",
         "title": "FULL CHEST WORKOUT W. COACH HANY RAMBOD",
         "duration": "26:43",
         "views": 1300000,
         "publishedDate": "2024-06-20",
         "wasLive": false,
         "author": {
-            "name": "Chris Bumstead",
+            "name": " BChrisumstead",
             "profilePic": "assets/images/channel-profile-pictures/channel7.jpg"
         }
     },
     {
-        "thumbnail": "assets/images/thumbnails/thumbnail8.avif",
-        "preview": "assets/video-previews/compressed-preview7.mp4",
-        "title": "RTX 5090 in GTA 5 Enhanced Edition LOOKS INCREDIBLE - INSANE Ray Tracing Realistic Graphics 4K120FPS",
-        "duration": "3:23:54",
-        "views": 195000,
-        "publishedDate": "2025-04-20",
-        "wasLive": false,
-        "author": {
-            "name": "RTXGameplays",
-            "profilePic": "assets/images/channel-profile-pictures/channel8.jpg"
-        }
-    },
-    {
+        "id": 8,
         "thumbnail": "assets/images/thumbnails/thumbnail9.avif",
         "preview": "assets/video-previews/compressed-preview8.mp4",
+        "fullVideo": "assets/videos/Inside a Single-Engine Aircraft How a Cessna 172 Works.mp4",
         "title": "Inside a Single-Engine Aircraft | How a Cessna 172 Works",
         "duration": "23:28",
         "views": 1200000,

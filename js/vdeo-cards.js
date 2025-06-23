@@ -175,7 +175,7 @@ async function loadVideos() {
         videos.forEach((video) => {
             videoCardsHTML += `
     <div class="video-card">
-                <a href="video.html">
+                <a href="video.html?id=${video.id}">
                 <div class="thumbnail-container">
                     <div class="thumbnail-image-container">
                         <video class="video-preview" muted loop preload="metadata" poster="${video.thumbnail}" src="${video.preview}"></video>
@@ -187,7 +187,7 @@ async function loadVideos() {
                         <img class="profile-picture" src="${video.author.profilePic}">
                     </div>
                     <div class="video-info">
-                        <a href="video.html">
+                        <a href="video.html?id=${video.id}">
                         <p class="video-title">${video.title}</p>
                         </a>
                         <p class="video-author">${video.author.name}</p>
@@ -224,7 +224,8 @@ async function loadVideos() {
     }
 }
 
-loadVideos()
+loadVideos();
+
 
 
 
