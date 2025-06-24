@@ -66,6 +66,7 @@ main {
 }
 
 .channel-container {
+    min-width: 193px;
     display: flex;
     align-items: top;
 }
@@ -73,7 +74,9 @@ main {
 .stats-container {
     flex: 1;
     display: flex;
-    background-color: aquamarine;
+    overflow: hidden;
+    white-space: nowrap;
+    gap: 12px;
 }
 
 .channel-profile {
@@ -94,13 +97,12 @@ main {
 }
 
 .subscribe-button {
+    width: 110px;
     height: 36px;
     background-color: white;
     border: none;
     border-radius: 18px;
-    padding-inline: 18px;
     font-weight: 500;
-    margin-left: 24px;
 }
 
 .channel-name {
@@ -121,4 +123,102 @@ main {
 
 .video-description strong {
     color: white;
+}
+
+
+.stats-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.like-dislike-container {
+    display: flex;
+}
+
+.like-button,
+.dislike-button,
+.stream-vid-button,
+.stream-3l-button {
+    background-color: rgb(39, 39, 39);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.stream-vid-button,
+.stream-3l-button {
+    padding-block: 6px;
+    border-radius: 18px;
+}
+
+.stream-vid-button {
+    padding-inline: 12px;
+}
+
+.like-button,
+.dislike-button {
+    padding-block: 6px;
+}
+
+.like-button-svg,
+.dislike-button-svg,
+.stream-button-svg,
+.stream-3l-button-svg {
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.dislike-button-svg {
+    padding-left: 10px;
+}
+
+.like-button-svg {
+    padding-right: 6px;
+}
+
+.like-button {
+    padding-left: 12px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.dislike-button {
+    padding-right: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.hide-stg1,
+.hide-stg2,
+.hide-stg3,
+.hide-stg4 {
+    display: none;
+}
+
+@media (max-width: 695px) {
+    .channel-stats-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .stats-container {
+        justify-content: start;
+    }
+
+    .hide-stg3,
+    .hide-stg4 {
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .hide-stg3 {
+        display: none;
+    }
 }

@@ -174,7 +174,7 @@ async function loadVideos() {
         const videos = await response.json();
         videos.forEach((video) => {
             videoCardsHTML += `
-    <div class="video-card">
+            <div class="video-card">
                 <a href="video.html?id=${video.id}">
                 <div class="thumbnail-container">
                     <div class="thumbnail-image-container">
@@ -223,6 +223,78 @@ async function loadVideos() {
         console.error('Error loading json data', error);
     }
 }
+
+function renderVideos(videosToRender) {
+    const grid = document.querySelector('.js-video-grid');
+    grid.innerHTML = ``;
+
+    videosToRender.forEach((video) => {
+        const html = `
+        <div class="video-card">
+                <a href="video.html?id=${video.id}">
+                <div class="thumbnail-container">
+                    <div class="thumbnail-image-container">
+                        <video class="video-preview" muted loop preload="metadata" poster="${video.thumbnail}" src="${video.preview}"></video>
+                    </div>
+                    <div class="video-timestamp">${video.duration}</div>
+                </div></a>
+                <div class="video-details">
+                    <div class="profile-picture-container">
+                        <img class="profile-picture" src="${video.author.profilePic}">
+                    </div>
+                    <div class="video-info">
+                        <a href="video.html?id=${video.id}">
+                        <p class="video-title">${video.title}</p>
+                        </a>
+                        <p class="video-author">${video.author.name}</p>
+                        <p class="video-stats">${formatViews(video.views)} de vizionări &#183; ${timeAgo(video.publishedDate, video.wasLive)} </p>
+                    </div>
+                    <div class="video-options">
+                        <img class="video-options-icon" src="assets/icons/vert-3dots.svg">
+                    </div>
+                </div>
+            </div>
+        `;
+
+        grid.innerHTML += html;
+    });
+}
+
+async function searchVideos(query) {
+    try {
+        const response = await fetch('data/videos.json');
+        const videos = await response.json();
+        const lowerQuerry = query.toLowerCase();
+
+        if (lowerQuerry === '') {
+            renderVideos(videos);
+            return;
+        }
+
+        const filtered = videos.filter(video => {
+            const titleMatch = video.title.toLowerCase().includes(lowerQuerry);
+            const tagsMatch = video.tags?.some(tag => tag.toLowerCase().includes(lowerQuerry));
+            return titleMatch || tagsMatch;
+        });
+
+        renderVideos(filtered);
+    } catch (err) {
+        console.error('Failed srch', err);
+    }
+
+}
+
+document.querySelector('.js-search-button')?.addEventListener('click', () => {
+    const input = document.querySelector('.js-search-input');
+    if (input) searchVideos(input.value.trim());
+});
+
+document.querySelector('.js-search-input')?.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        searchVideos(e.target.value.trim());
+    }
+});
+
 
 loadVideos();
 

@@ -21,7 +21,7 @@ fetch('data/videos.json').then(res => res.json()).then(videos => {
 
     const channelDetails = document.querySelector('.channel-container');
     channelDetails.innerHTML = `
-    <div class="channel-profile">
+                        <div class="channel-profile">
                             <img class="channel-profile-img" src="${video.author.profilePic}">
                         </div>
                         <div class="channel-details">
@@ -29,6 +29,15 @@ fetch('data/videos.json').then(res => res.json()).then(videos => {
                             <p class="channel-subscribers">${formatSubs(video.author.subscribers)} de abonati</p>
                         </div>
                         `;
+
+    const videoDescription = document.querySelector('.video-description');
+    videoDescription.innerHTML = `
+                <p>421 K de vizionări acum 5 luni</p>
+                <p>Acest videoclip reprezintă un preview de 1 minut. Pt. a vizualiza videolipurile intregi urmati instructiunile din README.md.</p>
+                <strong>...mai multe</strong>
+                `;
+
+
     const recommendedVideos = document.querySelector('.video-collumn');
     videos.forEach(vid => {
         if (vid.id != videoId) {

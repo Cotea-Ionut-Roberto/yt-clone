@@ -87,3 +87,9 @@
 .rec-vid-stats {
     font-size: 12px;
 }
+
+@media (max-width: 1080px) {
+    .recomended-videos-sidebar {
+        display: none;
+    }
+}
