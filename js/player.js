@@ -24,7 +24,7 @@ function renderVideoDescription(video) {
     const container = document.querySelector('.video-description');
     container.innerHTML = `
         <p>${formatBigNumber(video.views)} de vizionări · ${timeAgo(video.publishedDate)}</p>
-        <p>Acest videoclip reprezintă un preview de 1 minut. Pt. a vizualiza videolipurile întregi urmăriți instrucțiunile din README.md.</p>
+        <p>Acesta este un preview de 1 minut. Proiect realizat in scop educational. Nu există redare completă din motive legale și de performanță. Toate drepturile revin creatorilor de continut si Google LLC.</p>
         <strong>...mai multe</strong>
     `;
 }

@@ -121,6 +121,10 @@ main {
     border-radius: 12px;
 }
 
+.video-description p {
+    margin: 8px;
+}
+
 .video-description strong {
     color: white;
 }
