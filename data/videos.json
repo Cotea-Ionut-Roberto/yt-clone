@@ -17,7 +17,8 @@
         "wasLive": false,
         "author": {
             "name": " Chris Bumstead",
-            "profilePic": "assets/images/channel-profile-pictures/channel7.jpg"
+            "profilePic": "assets/images/channel-profile-pictures/channel7.jpg",
+            "subscribers": 4240000
         }
     },
     {
@@ -38,7 +39,8 @@
         "wasLive": false,
         "author": {
             "name": "Lone Rider",
-            "profilePic": "assets/images/channel-profile-pictures/channel1.jpg"
+            "profilePic": "assets/images/channel-profile-pictures/channel1.jpg",
+            "subscribers": 119000
         }
     },
     {
@@ -59,7 +61,8 @@
         "wasLive": false,
         "author": {
             "name": "Vehicle Virgins",
-            "profilePic": "assets/images/channel-profile-pictures/channel2.jpg"
+            "profilePic": "assets/images/channel-profile-pictures/channel2.jpg",
+            "subscribers": 2470000
         }
     },
     {
@@ -81,7 +84,8 @@
         "wasLive": false,
         "author": {
             "name": "Eternal Depth",
-            "profilePic": "assets/images/channel-profile-pictures/channel3.jpg"
+            "profilePic": "assets/images/channel-profile-pictures/channel3.jpg",
+            "subscribers": 197000
         }
     },
     {
@@ -124,7 +128,8 @@
         "wasLive": false,
         "author": {
             "name": "Andrew Huberman",
-            "profilePic": "assets/images/channel-profile-pictures/channel5.jpg"
+            "profilePic": "assets/images/channel-profile-pictures/channel5.jpg",
+            "subscribers": 6900000
         }
     },
     {
@@ -145,7 +150,8 @@
         "wasLive": false,
         "author": {
             "name": "Throttle House",
-            "profilePic": "assets/images/channel-profile-pictures/channel6.jpg"
+            "profilePic": "assets/images/channel-profile-pictures/channel6.jpg",
+            "subscribers": 3270000
         }
     },
     {
@@ -166,7 +172,8 @@
         "wasLive": false,
         "author": {
             "name": " BChrisumstead",
-            "profilePic": "assets/images/channel-profile-pictures/channel7.jpg"
+            "profilePic": "assets/images/channel-profile-pictures/channel7.jpg",
+            "subscribers": 4240000
         }
     },
     {
@@ -187,7 +194,8 @@
         "wasLive": false,
         "author": {
             "name": "Joyplanes",
-            "profilePic": "assets/images/channel-profile-pictures/channel9.jpg"
+            "profilePic": "assets/images/channel-profile-pictures/channel9.jpg",
+            "subscribers": 215000
         }
     }
 ]
