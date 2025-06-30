@@ -52,7 +52,6 @@ export function renderVideos(videos) {
 
         card.addEventListener('mouseleave', () => {
             video.pause();
-            video.currentTime = 0;
             video.load();
 
             if (timestamp) timestamp.style.opacity = '1';

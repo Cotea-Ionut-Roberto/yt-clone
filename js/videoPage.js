@@ -5,7 +5,7 @@ import { initFilterBar } from "./filter.js";
 function initVideoPage() {
     initVideoPlayer();
     initSearch();
-    initFilterBar();
+    initFilterBar('.js-recomended-filter-bar', true);
 }
 
 initVideoPage();

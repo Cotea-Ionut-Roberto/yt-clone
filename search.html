@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="stylesheet" href="styles/filter-bar.css">
-    <link rel="stylesheet" href="styles/video-grid.css">
+    <link rel="stylesheet" href="styles/search.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
@@ -364,15 +364,45 @@
     </nav>
 
     <main>
-        <nav class="filter-bar js-filter-bar">
-        </nav>
+        <section class="video-column js-search-grid">
+            <div class="video-card">
+                <div class="thumbnail-image-container">
+                    <video class="video-preview" src="assets/video-previews/compressed-preview.mp4" muted loop preload="metadata" poster="assets/images/thumbnails/thumbnail1.avif"></video>
+                </div>
+                <div class="video-details">
+                    <h2 class="video-title">BMW R1250GS Adventure — Why I bought one and my TOP MODS for it</h2>
+                    <p class="video-stats">467 mil. de vizionări acum 8 ani</p>
+                    <div class="author-details">
+                        <img class="profile-picture" src="assets/images/channel-profile-pictures/channel1.jpg">
+                        <p class="author-name">Lone Rider</p>
+                    </div>
+                    <p class="description-preview">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit dolores aperiam laborum hic adipisci assumenda cum...
+                    </p>
+                </div>
+            </div>
 
-        <section class="video-grid js-video-grid">
+            <div class="video-card">
+                <div class="thumbnail-image-container">
+                    <video class="video-preview" src="assets/video-previews/compressed-preview.mp4" muted loop preload="metadata" poster="assets/images/thumbnails/thumbnail1.avif"></video>
+                </div>
+                <div class="video-details">
+                    <h2 class="video-title">BMW R1250GS Adventure — Why I bought one and my TOP MODS for it</h2>
+                    <p class="video-stats">467 mil. de vizionări acum 8 ani</p>
+                    <div class="author-details">
+                        <img class="profile-picture" src="assets/images/channel-profile-pictures/channel1.jpg">
+                        <p class="author-name">Lone Rider</p>
+                    </div>
+                    <p class="description-preview">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit dolores aperiam laborum hic adipisci assumenda cum...
+                    </p>
+                </div>
+            </div>
+
         </section>
-
     </main>
 
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/searchPage.js"></script>
 </body>
 
 </html>

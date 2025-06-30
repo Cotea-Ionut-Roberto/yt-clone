@@ -28,7 +28,9 @@ export function renderRecommendedVideos(videos) {
             </a>
             <div class="recom-video-details-container">
                 <div class="video-title-container">
-                    <p class="rec-vid-title">${video.title}</p>
+                    <a href="video.html?id=${video.id}">
+                        <p class="rec-vid-title">${video.title}</p>
+                    </a>
                 </div>
                 <div class="rec-vid-info">
                     <p class="rec-vid-author">${video.author.name}</p>

@@ -4,7 +4,11 @@ body {
     font-family: Roboto, Arial;
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
     color: white;
 }
@@ -18,4 +22,15 @@ p {
     background-color: rgba(15, 15, 15, 0.7);
     backdrop-filter: blur(28px);
     z-index: 1500;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
 }
