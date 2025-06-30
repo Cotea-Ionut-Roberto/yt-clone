@@ -1,7 +1,8 @@
 import { renderVideos } from "./render.js";
 import { fetchVideos } from "./videoData.js";
+import { renderRecommendedVideos } from "./recomended.js";
 
-export async function filterByTag(tag) {
+export async function filterByTag(tag, renderRecommendations = false) {
     const videos = await fetchVideos();
     const lowerTag = tag.toLowerCase();
 
@@ -10,11 +11,15 @@ export async function filterByTag(tag) {
     });
 
     renderVideos(filtered);
+
+    if (renderRecommendations) {
+        renderRecommendedVideos(filtered);
+    }
 }
 
-export async function initFilterBar() {
+export async function initFilterBar(selector = ".js-filter-bar", renderRecommendations = false) {
     const videos = await fetchVideos();
-    const container = document.querySelector('.js-filter-bar');
+    const container = document.querySelector(selector);
     if (!container) return;
 
     container.innerHTML = ``;
@@ -25,6 +30,9 @@ export async function initFilterBar() {
     allButton.addEventListener('click', async () => {
         const allVideos = await fetchVideos();
         renderVideos(allVideos);
+        if (renderRecommendations) {
+            renderRecommendedVideos(allVideos);
+        }
         setActiveButton(allButton);
     });
     container.appendChild(allButton);
@@ -46,7 +54,7 @@ export async function initFilterBar() {
         button.classList.add('filter-button');
         button.textContent = tag;
         button.addEventListener('click', () => {
-            filterByTag(tag);
+            filterByTag(tag, renderRecommendations);
             setActiveButton(button);
         });
 
